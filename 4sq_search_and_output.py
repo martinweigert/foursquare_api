@@ -100,9 +100,9 @@ def get_venue_data_from_search(venue_id,client_id,client_secret):
         print("URL: %s" % url)
     print("###")
 
+    filename = ("%s_%s.txt" % (where,what))
 
-
-    with open("stockholm_burgers.txt",'a') as file:
+    with open(filename,'a') as file:
         if get_venue_data_counter[0] == 1:
             firstrow = "name" + ";" + "address" + ";" + "city" + ";" + "country" + ";" + "rating" + ";" + "checkins" + ";" + "tips" + ";" + "url" + "\n"
             file.write(firstrow)
