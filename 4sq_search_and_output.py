@@ -6,9 +6,11 @@ import json, requests
 client_id = # add your client_id here
 client_secret = # add your client-secret here
 
-where = "Stockholm"
-what = "burger"
-limit = 5
+global where
+global what
+where = "Stockholm" # change for different location
+what = "burger" # change for different thing to surch for
+limit = 5 # number of search results. change if needed.
 
 
 
