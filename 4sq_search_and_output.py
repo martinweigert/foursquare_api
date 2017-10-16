@@ -8,12 +8,9 @@ client_secret = # add your client-secret here
 
 global where
 global what
-where = "Stockholm" # change for different location
+where = "Stockholm, Sweden" # change for different location, e.g. "Berlin, Germany"
 what = "burger" # change for different thing to surch for
 limit = 5 # number of search results. change if needed.
-
-
-
 
 
 def search(near,query,limit,client_id,client_secret):
