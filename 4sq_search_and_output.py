@@ -1,6 +1,7 @@
 import json, requests
 
 # This script searches Foursquare at a given location, prints the results and stores them in a .txt file.
+# Get your client_id and client_secret from developer.foursquare.com
 
 client_id = #Add your id here.
 client_secret = #Add your secret here.
@@ -17,8 +18,8 @@ def search(near,query,limit,client_id,client_secret):
     url = 'https://api.foursquare.com/v2/venues/search'
 
     params = dict(
-        client_id='client_id,
-        client_secret='client_secret,
+        client_id=client_id,
+        client_secret=client_secret,
         v='20170801',
         near=near,
         query=query,
