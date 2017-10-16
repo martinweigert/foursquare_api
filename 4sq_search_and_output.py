@@ -42,8 +42,8 @@ def get_venue_data_from_search(venue_id,client_id,client_secret):
     url_venue = ('https://api.foursquare.com/v2/venues/%s' % venue_id)
 
     params = dict(
-        client_id='BCHYAQH4E5S3N3QSVDX2I2CJIHQ4BDRL0RZ2XWCJY1ARZ2YJ',
-        client_secret='DO15AKHZLNMEM2BEQAWG2ZCVTRHONYWF02EVYXEN3EUSMJPQ',
+        client_id=client_id,
+        client_secret=client_secret,
         v='20170801')
 
     resp_venue = requests.get(url=url_venue,params=params)
